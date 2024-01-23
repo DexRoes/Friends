@@ -1,0 +1,10 @@
+@media screen and (max-width: 850px) {
+
+    .main-season-description{
+        padding: 0;
+    }
+    .main-season-description p {
+        display: none;
+    }
+
+}

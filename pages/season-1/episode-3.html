@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>3 Эпизод</title>
+    <link rel="icon" href="/images/icon-web.png">
+    <link rel="stylesheet" href="../../styles/style.css">
+    <script src="../../scripts/playerjs.js" type="text/javascript"></script>
+</head>
+<body>
+<header class="header">
+    <div class="container">
+        <div class="header-logo">
+            <a href="../../index.html"><img src="../../images/logo-friends.png" alt="logo"></a>
+        </div>
+        <ul class="header-menu">
+            <li class="first-paragraph"><a href="../season-select.html">Сезоны</a></li>
+            <li class="second-paragraph"><a href="../actors.html">Актёры</a></li>
+            <li class="third-paragraph"><a href="../characters.html">Персонажи</a></li>
+            <li class="fourth-paragraph"><a href="../news.html">Новости</a></li>
+            <li class="fifth-paragraph"><a href="../FAQ.html">FAQ</a></li>
+        </ul>
+        <div class="header-search">
+            <a href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30" height="30" viewBox="0 0 50 50"
+                     style="fill:#FFFFFF;">
+                    <path d="M 21 3 C 11.621094 3 4 10.621094 4 20 C 4 29.378906 11.621094 37 21 37 C 24.710938 37 28.140625 35.804688 30.9375 33.78125 L 44.09375 46.90625 L 46.90625 44.09375 L 33.90625 31.0625 C 36.460938 28.085938 38 24.222656 38 20 C 38 10.621094 30.378906 3 21 3 Z M 21 5 C 29.296875 5 36 11.703125 36 20 C 36 28.296875 29.296875 35 21 35 C 12.703125 35 6 28.296875 6 20 C 6 11.703125 12.703125 5 21 5 Z"></path>
+                </svg>
+            </a>
+        </div>
+    </div>
+</header>
+
+<div class="main-season-description">
+    <div class="container">
+        <p>Первый сезон сериала "Друзья" вводит зрителей в мир Росса Геллера, Моники Геллер, Чендлера Бинга, Фиби Буффе,
+            Джоуи Триббиани и Рейчел Грин. Их жизни переплетаются, когда Рейчел, бежавшая от свадьбы, приходит в
+            квартиру
+            Моники, и они снова становятся близкими друзьями.
+
+            Сезон следит за их жизнью и отношениями, исследуя темы дружбы, любви, карьеры и смешных ситуаций, с которыми
+            они сталкиваются. Основные сюжетные линии первого сезона включают в себя Росса, который пытается справиться
+            с разводом, Монику, которая старается найти свою нишу в работе и личной жизни, и Рейчел, которая начинает
+            новую жизнь в большом городе.
+
+            Сезон также включает в себя множество незабываемых моментов и вечных шуток, которые сделали "Друзей"
+            настоящей легендой телевизионного искусства. Этот сезон устанавливает тон для всего сериала, который
+            продолжит радовать зрителей в течение десяти лет и станет классикой ситкомов.</p>
+
+        <div class="video">
+            <div id="player"></div>
+        </div>
+        <!--Оформить кнопку-->
+        <!--        <a href="#" onclick="history.back();">Назад</a>-->
+        <!--        <a href="#" onclick="history.next();">Вперёд</a>-->
+        <a href="episode-2.html">Назад</a>
+        <a href="episode-4.html">Вперёд</a>
+
+    </div>
+</div>
+<footer class="footer">
+    <div class="container">
+        <span>Здесь ничего нет</span>
+    </div>
+</footer>
+
+
+<script>
+    let player = new Playerjs({
+        id: "player", file: "../../video/playlist-friends.txt", plstart: "s1-ep3"});
+</script>
+</body>
+</html>
