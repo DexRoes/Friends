@@ -3,8 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <title>1 Сезон</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" href="/images/icon-web.png">
     <link rel="stylesheet" href="../../styles/style.css">
+    <link rel="stylesheet" href="../../styles/adaptive.css">
 </head>
 <body>
 <header class="header">
@@ -12,23 +14,49 @@
         <div class="header-logo">
             <a href="../../index.html"><img src="../../images/logo-friends.png" alt="logo"></a>
         </div>
-        <ul class="header-menu">
-            <li class="first-paragraph"><a href="../season-select.html">Сезоны</a></li>
-            <li class="second-paragraph"><a href="../actors.html">Актёры</a></li>
-            <li class="third-paragraph"><a href="../characters.html">Персонажи</a></li>
-            <li class="fourth-paragraph"><a href="../news.html">Новости</a></li>
-            <li class="fifth-paragraph"><a href="../FAQ.html">FAQ</a></li>
+        <div class="burger" id="burger">
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                <g id="SVGRepo_iconCarrier">
+                    <path d="M5 8H13.75M5 12H19M10.25 16L19 16" stroke="#ffffff" stroke-linecap="round"
+                          stroke-linejoin="round"></path>
+                </g>
+            </svg>
+        </div>
+        <div class="close" id="close">
+            <svg xmlns="http://www.w3.org/2000/svg"
+                 width="40"
+                 height="40"
+                 viewBox="0 0 24 24"
+                 fill="white"
+                 stroke="currentColor"
+                 stroke-width="2"
+                 stroke-linecap="round"
+                 stroke-linejoin="round">
+                <line x1="18" y1="6" x2="6" y2="18"/>
+                <line x1="6" y1="6" x2="18" y2="18"/>
+            </svg>
+
+        </div>
+        <ul class="header-menu" id="open">
+            <li class="first-paragraph"><a href="../../index.html#select-season">Сезоны</a></li>
+            <li class="second-paragraph"><a href="#" class="disabled">Актёры</a></li>
+            <li class="third-paragraph"><a href="#" class="disabled">Персонажи</a></li>
+            <li class="fourth-paragraph"><a href="#" class="disabled">Новости</a></li>
+            <li class="fifth-paragraph"><a href="#" class="disabled">FAQ</a></li>
         </ul>
         <div class="header-search">
-            <a href="#">
-                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30" height="30" viewBox="0 0 50 50"
-                     style="fill:#FFFFFF;">
+            <a href="#" class="disabled">
+                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30" height="30" viewBox="0 0 50 50">
                     <path d="M 21 3 C 11.621094 3 4 10.621094 4 20 C 4 29.378906 11.621094 37 21 37 C 24.710938 37 28.140625 35.804688 30.9375 33.78125 L 44.09375 46.90625 L 46.90625 44.09375 L 33.90625 31.0625 C 36.460938 28.085938 38 24.222656 38 20 C 38 10.621094 30.378906 3 21 3 Z M 21 5 C 29.296875 5 36 11.703125 36 20 C 36 28.296875 29.296875 35 21 35 C 12.703125 35 6 28.296875 6 20 C 6 11.703125 12.703125 5 21 5 Z"></path>
                 </svg>
             </a>
         </div>
     </div>
 </header>
+
+
 
 <div class="main-season-description">
     <div class="container">
@@ -46,31 +74,31 @@
             настоящей легендой телевизионного искусства. Этот сезон устанавливает тон для всего сериала, который
             продолжит радовать зрителей в течение десяти лет и станет классикой ситкомов.</p>
 
-        <div class="select-series">
+        <div class="select-series" id="select-series-1">
             <a href="episode-1.html"><h2>Эпизод 1:</h2><img src="../../images/episode/S1-E01.webp" alt="series-1"><span>Эпизод, где Моника берёт новую соседку</span></a>
             <a href="episode-2.html"><h2>Эпизод 2:</h2><img src="../../images/episode/S1-E02.webp" alt="series-2"><span>Эпизод с сонограммой в конце</span></a>
             <a href="episode-3.html"><h2>Эпизод 3:</h2><img src="../../images/episode/S1-E03.webp" alt="series-3"><span>Эпизод с большим пальцем</span></a>
             <a href="episode-4.html"><h2>Эпизод 4:</h2><img src="../../images/episode/S1-E04.webp" alt="series-4"><span>Эпизод с Джорджем Стефанопулосом</span></a>
             <a href="episode-5.html"><h2>Эпизод 5:</h2><img src="../../images/episode/S1-E05.webp" alt="series-5"><span>Эпизод с восточногерманским стиральным порошком</span></a>
             <a href="episode-6.html"><h2>Эпизод 6:</h2><img src="../../images/episode/S1-E06.webp" alt="series-6"><span>Эпизод с задом</span></a>
-            <a href="episode-7.html" class="disabled"><h2>Эпизод 7:</h2><img src="../../images/episode/S1-E07.webp" alt="series-7"><span>Эпизод, в котором отключается свет</span></a>
-            <a href="episode-8.html" class="disabled"><h2>Эпизод 8:</h2><img src="../../images/episode/S1-E08.webp" alt="series-8"><span>Эпизод, где Нана умирает дважды</span></a>
-            <a href="episode-9.html" class="disabled"><h2>Эпизод 9:</h2><img src="../../images/episode/S1-E09.webp" alt="series-9"><span>Эпизод, где улетает Суперпёс</span></a>
-            <a href="episode-10.html" class="disabled"><h2>Эпизод 10:</h2><img src="../../images/episode/S1-E10.webp" alt="series-10"><span>Эпизод с обезьяной</span></a>
-            <a href="episode-11.html" class="disabled"><h2>Эпизод 11:</h2><img src="../../images/episode/S1-E11.webp" alt="series-11"><span>Эпизод с госпожой Бинг</span></a>
-            <a href="episode-12.html" class="disabled"><h2>Эпизод 12:</h2><img src="../../images/episode/S1-E12.webp" alt="series-12"><span>Эпизод с дюжиной лазаний</span></a>
-            <a href="episode-13.html" class="disabled"><h2>Эпизод 13:</h2><img src="../../images/episode/S1-E13.webp" alt="series-13"><span>Эпизод с грудью</span></a>
-            <a href="episode-14.html" class="disabled"><h2>Эпизод 14:</h2><img src="../../images/episode/S1-E14.webp" alt="series-14"><span>Эпизод с конфетками-сердцами</span></a>
-            <a href="episode-15.html" class="disabled"><h2>Эпизод 15:</h2><img src="../../images/episode/S1-E15.webp" alt="series-15"><span>Эпизод с обкуренным парнем</span></a>
-            <a href="episode-16.html" class="disabled"><h2>Эпизод 16:</h2><img src="../../images/episode/S1-E16.webp" alt="series-16"><span>Эпизод с двумя частями, часть 1</span></a>
-            <a href="episode-17.html" class="disabled"><h2>Эпизод 17:</h2><img src="../../images/episode/S1-E17.webp" alt="series-17"><span>Эпизод с двумя частями, часть 2</span></a>
-            <a href="episode-18.html" class="disabled"><h2>Эпизод 18:</h2><img src="../../images/episode/S1-E18.webp" alt="series-18"><span>Эпизод с покером</span></a>
-            <a href="episode-19.html" class="disabled"><h2>Эпизод 19:</h2><img src="../../images/episode/S1-E19.webp" alt="series-19"><span>Эпизод, где обезьяна сбегает</span></a>
-            <a href="episode-20.html" class="disabled"><h2>Эпизод 20:</h2><img src="../../images/episode/S1-E20.webp" alt="series-20"><span>Эпизод со злым ортодонтом</span></a>
-            <a href="episode-21.html" class="disabled"><h2>Эпизод 21:</h2><img src="../../images/episode/S1-E21.webp" alt="series-21"><span>Эпизод с фальшивой Моникой</span></a>
-            <a href="episode-22.html" class="disabled"><h2>Эпизод 22:</h2><img src="../../images/episode/S1-E22.webp" alt="series-22"><span>Эпизод с ик-фактором</span></a>
-            <a href="episode-23.html" class="disabled"><h2>Эпизод 23:</h2><img src="../../images/episode/S1-E23.webp" alt="series-23"><span>Эпизод с рождением</span></a>
-            <a href="episode-24.html" class="disabled"><h2>Эпизод 24:</h2><img src="../../images/episode/S1-E24.webp" alt="series-24"><span>Эпизод, где Рейчел понимает</span></a>
+            <a href="#" class="disabled"><h2>Эпизод 7:</h2><img src="../../images/episode/S1-E07.webp" alt="series-7"><span>Эпизод, в котором отключается свет</span></a>
+            <a href="#" class="disabled"><h2>Эпизод 8:</h2><img src="../../images/episode/S1-E08.webp" alt="series-8"><span>Эпизод, где Нана умирает дважды</span></a>
+            <a href="#" class="disabled"><h2>Эпизод 9:</h2><img src="../../images/episode/S1-E09.webp" alt="series-9"><span>Эпизод, где улетает Суперпёс</span></a>
+            <a href="#" class="disabled"><h2>Эпизод 10:</h2><img src="../../images/episode/S1-E10.webp" alt="series-10"><span>Эпизод с обезьяной</span></a>
+            <a href="#" class="disabled"><h2>Эпизод 11:</h2><img src="../../images/episode/S1-E11.webp" alt="series-11"><span>Эпизод с госпожой Бинг</span></a>
+            <a href="#" class="disabled"><h2>Эпизод 12:</h2><img src="../../images/episode/S1-E12.webp" alt="series-12"><span>Эпизод с дюжиной лазаний</span></a>
+            <a href="#" class="disabled"><h2>Эпизод 13:</h2><img src="../../images/episode/S1-E13.webp" alt="series-13"><span>Эпизод с грудью</span></a>
+            <a href="#" class="disabled"><h2>Эпизод 14:</h2><img src="../../images/episode/S1-E14.webp" alt="series-14"><span>Эпизод с конфетками-сердцами</span></a>
+            <a href="#" class="disabled"><h2>Эпизод 15:</h2><img src="../../images/episode/S1-E15.webp" alt="series-15"><span>Эпизод с обкуренным парнем</span></a>
+            <a href="#" class="disabled"><h2>Эпизод 16:</h2><img src="../../images/episode/S1-E16.webp" alt="series-16"><span>Эпизод с двумя частями, часть 1</span></a>
+            <a href="#" class="disabled"><h2>Эпизод 17:</h2><img src="../../images/episode/S1-E17.webp" alt="series-17"><span>Эпизод с двумя частями, часть 2</span></a>
+            <a href="#" class="disabled"><h2>Эпизод 18:</h2><img src="../../images/episode/S1-E18.webp" alt="series-18"><span>Эпизод с покером</span></a>
+            <a href="#" class="disabled"><h2>Эпизод 19:</h2><img src="../../images/episode/S1-E19.webp" alt="series-19"><span>Эпизод, где обезьяна сбегает</span></a>
+            <a href="#" class="disabled"><h2>Эпизод 20:</h2><img src="../../images/episode/S1-E20.webp" alt="series-20"><span>Эпизод со злым ортодонтом</span></a>
+            <a href="#" class="disabled"><h2>Эпизод 21:</h2><img src="../../images/episode/S1-E21.webp" alt="series-21"><span>Эпизод с фальшивой Моникой</span></a>
+            <a href="#" class="disabled"><h2>Эпизод 22:</h2><img src="../../images/episode/S1-E22.webp" alt="series-22"><span>Эпизод с ик-фактором</span></a>
+            <a href="#" class="disabled"><h2>Эпизод 23:</h2><img src="../../images/episode/S1-E23.webp" alt="series-23"><span>Эпизод с рождением</span></a>
+            <a href="#" class="disabled"><h2>Эпизод 24:</h2><img src="../../images/episode/S1-E24.webp" alt="series-24"><span>Эпизод, где Рейчел понимает</span></a>
         </div>
     </div>
 </div>

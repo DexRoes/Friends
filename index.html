@@ -14,14 +14,39 @@
 <header class="header">
     <div class="container">
         <div class="header-logo">
-            <a><img src="images/logo-friends.png" alt="logo"></a>
+            <a href="index.html"><img src="images/logo-friends.png" alt="logo"></a>
         </div>
-        <ul class="header-menu">
+        <div class="burger" id="burger">
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                <g id="SVGRepo_iconCarrier">
+                    <path d="M5 8H13.75M5 12H19M10.25 16L19 16" stroke="#ffffff" stroke-linecap="round"
+                          stroke-linejoin="round"></path>
+                </g>
+            </svg>
+        </div>
+        <div class="close" id="close">
+            <svg xmlns="http://www.w3.org/2000/svg"
+                 width="40"
+                 height="40"
+                 viewBox="0 0 24 24"
+                 fill="white"
+                 stroke="currentColor"
+                 stroke-width="2"
+                 stroke-linecap="round"
+                 stroke-linejoin="round">
+                <line x1="18" y1="6" x2="6" y2="18"/>
+                <line x1="6" y1="6" x2="18" y2="18"/>
+            </svg>
+
+        </div>
+        <ul class="header-menu" id="open">
             <li class="first-paragraph"><a href="#select-season">Сезоны</a></li>
-            <li class="second-paragraph"><a href="" class="disabled">Актёры</a></li>
-            <li class="third-paragraph"><a href="" class="disabled">Персонажи</a></li>
-            <li class="fourth-paragraph"><a href="" class="disabled">Новости</a></li>
-            <li class="fifth-paragraph"><a href="" class="disabled">FAQ</a></li>
+            <li class="second-paragraph"><a href="#" class="disabled">Актёры</a></li>
+            <li class="third-paragraph"><a href="#" class="disabled">Персонажи</a></li>
+            <li class="fourth-paragraph"><a href="#" class="disabled">Новости</a></li>
+            <li class="fifth-paragraph"><a href="#" class="disabled">FAQ</a></li>
         </ul>
         <div class="header-search">
             <a href="#" class="disabled">
@@ -35,25 +60,25 @@
 <div class="main-image">
     <div class="container">
         <div class="main-description">
-            <h1>Друзья</h1>
-            <p>Сериал "Friends" рассказывает о жизни шестерых друзей, живущих в Нью-Йорке: Росса (Дэвид Швиммер), Рейчел
-                (Дженнифер
-                Энистон), Моники (Кортни Кокс), Чендлера (Мэттью Перри), Фиби (Лиза Кудроу) и Джои (Мэтт Лебланк). Они
-                переживают множество комических и драматических моментов, связанных с их карьерами, отношениями, дружбой
-                и
-                жизнью в центре большого города.</p>
-            <a href="pages/season-select.html" class="main-button main-button-green disabled">
-                <svg width="20" height="20" fill="currentColor" class="bi bi-play-circle-fill" viewBox="0 0 16 16">
-                    <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814l-3.5-2.5z"/>
-                </svg>
-                Смотреть онлайн
-            </a>
-            <a href="#" class="main-button disabled">
-                <svg width="20" height="20" fill="currentColor" class="bi bi-play-circle-fill" viewBox="0 0 16 16">
-                    <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814l-3.5-2.5z"/>
-                </svg>
-                Трейлер
-            </a>
+<!--            <h1>Друзья</h1>-->
+<!--            <p>Сериал "Friends" рассказывает о жизни шестерых друзей, живущих в Нью-Йорке: Росса (Дэвид Швиммер), Рейчел-->
+<!--                (Дженнифер-->
+<!--                Энистон), Моники (Кортни Кокс), Чендлера (Мэттью Перри), Фиби (Лиза Кудроу) и Джои (Мэтт Лебланк). Они-->
+<!--                переживают множество комических и драматических моментов, связанных с их карьерами, отношениями, дружбой-->
+<!--                и-->
+<!--                жизнью в центре большого города.</p>-->
+<!--            <a href="#" class="main-button main-button-green disabled">-->
+<!--                <svg width="20" height="20" fill="currentColor" class="bi bi-play-circle-fill" viewBox="0 0 16 16">-->
+<!--                    <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814l-3.5-2.5z"/>-->
+<!--                </svg>-->
+<!--                Смотреть онлайн-->
+<!--            </a>-->
+<!--            <a href="#" class="main-button disabled">-->
+<!--                <svg width="20" height="20" fill="currentColor" class="bi bi-play-circle-fill" viewBox="0 0 16 16">-->
+<!--                    <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814l-3.5-2.5z"/>-->
+<!--                </svg>-->
+<!--                Трейлер-->
+<!--            </a>-->
         </div>
     </div>
 </div>

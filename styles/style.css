@@ -21,16 +21,15 @@ body {
 .header {
     font-family: friends, sans-serif;
     background: black;
-    padding: 5px 0;
+    padding: 15px 20px;
     position: sticky;
-    z-index: 3000;
     top: 0;
-    transition: transform 0.4s ease; /* Добавляем анимацию для плавного появления и скрытия */
-    transform: translateY(0); /* Изначально заголовок видим */
+    z-index: 10;
+    transition: .4s; /* Добавляем анимацию для плавного появления и скрытия */
 }
 
 .header.hidden {
-    transform: translateY(-100%); /* Скрываем заголовок при скролле вниз */
+    transform: translateY(-80%); /* Скрываем заголовок при скролле вниз */
 }
 
 .header .container {
@@ -43,7 +42,7 @@ body {
     width: 240px;
 }
 
-.header ul {
+.header-menu  {
     display: flex;
 }
 
@@ -87,8 +86,6 @@ body {
 
 .header ul a {
     text-decoration: none;
-    height: 60px;
-    line-height: 60px;
     font-weight: 700;
     font-size: 16px;
     text-transform: uppercase;
@@ -114,10 +111,11 @@ body {
 
 .main-image {
     background-image: url("../images/fon3-transformed.jpeg");
-    height: 400px;
+    /*height: 400px;*/
+    height: 470px;
     background-size: cover;
     background-position: center;
-    padding: 60px 0;
+    /*padding: 60px 20px;*/
 }
 
 .main-description h1 {
@@ -197,7 +195,6 @@ body {
 }
 
 
-
 .disabled {
     color: #a8a8a8;
 }
@@ -215,6 +212,7 @@ body {
     filter: grayscale(1);
     /*transition: 1s;*/
 }
+
 /*.disabled img:hover {*/
 /*    filter: grayscale(0);*/
 /*}*/
@@ -224,8 +222,12 @@ body {
 
 /* Стили для страниц сезонов */
 
+.prev {
+    margin-bottom: 20px;
+}
+
 .main-season-description {
-    padding: 0 20px 20px 20px;
+    padding: 0 20px;
 }
 
 .main-season-description p {
@@ -251,68 +253,102 @@ body {
 }
 
 .select-series img {
-    padding: 7px 13px 10px 0;
+    padding-top: 7px;
     box-sizing: border-box;
-    width: 300px;
+    width: 288px;
 }
 
 .select-series a {
-    padding-bottom: 10px;
     border-bottom: 1px solid rgba(128, 128, 128, 0.8);
     width: 287px;
 }
 
 .select-series a span {
     font-size: 17px;
-    width: 300px;
+    width: auto;
+    padding: 10px 0 10px 0;
 }
 
 .main-season-description .video {
     display: flex;
     justify-content: center;
-    margin-top: 30px;
 }
 
 .video a {
-    display: flex;
-    align-items: end;
-    margin-top: auto;
-    margin-left: 15px;
-    margin-right: 15px;
-    text-decoration: none;
-    font-size: 20px;
+    margin: auto 0;
 }
 
-.arrow-left span {
-    /*transform: rotate(180deg);*/
-    transform: rotate(90deg);
-    font-size: 19px;
+.arrow-left svg {
+    transform: rotate(180deg);
 }
 
-.arrow-right span {
-    /*transform: rotate(180deg);*/
-    transform: rotate(270deg);
-    font-size: 19px;
+.arrow-left svg, .arrow-right svg {
+    transition: .4s;
 }
 
-.video a svg {
+.arrow-left svg:hover, .arrow-right svg:hover{
+    fill: #cecece;
 }
 
 #player {
     width: 80%;
     height: 200px;
+    margin: 0 15px;
 }
 
 footer {
     padding: 25px 15px 30px 15px;
     background-color: rgba(45, 45, 45, 0.55);
+    margin-top: 20px;
 }
 
 footer span {
-    color: #a8a8a8;
+    color: gray;
     margin-left: 40px;
 }
 
 /*Идеи для дизайна*/
 
 /*При выборе серии фон или текст плавно меняется на тёмно-серый*/
+
+
+
+
+
+/*/////////////////////////////////////*/
+/*прилипший низ*/
+/*/////////////////////////////////////*/
+
+body {
+    /*font-family: sans-serif;*/
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: column;
+    min-height: 86vh; /* высота веб-страницы больше или равна высоте окна браузера */
+    /*margin: 0;*/
+}
+.main-season-description {
+    flex: 1; /* если содержимое body меньше высоты окна, то section будет растянут до нужной величины */
+}
+
+.burger {
+    display: none;
+}
+
+.burger svg {
+    height: 55px;
+    width: 55px;
+}
+
+.close {
+    display: none;
+    z-index: 100;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    height: 30px;
+}
+
+#player {
+    margin: 0;
+}

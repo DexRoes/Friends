@@ -1,52 +1,38 @@
-// sticky для шапки
-
-let lastScrollTop = 0;
-
 window.addEventListener('scroll', function () {
         const header = document.querySelector('.header');
         const scrollTop = window.scrollY;
 
-        if (scrollTop > 60) {
-            // Прокрутка вниз
+        if (scrollTop > 100) {
             header.classList.add('hidden');
-            // } else if (scrollTop > lastScrollTop) {
-            //     header.classList.add('hidden');
         } else {
-            // Прокрутка вверх
             header.classList.remove('hidden');
         }
-
-        // if (scrollTop > lastScrollTop) {
-        //     header.classList.add('hidden');
-        // } else {
-        //     header.classList.remove('hidden');
-        // }
-
-        lastScrollTop = scrollTop;
     }
 );
 
-// window.addEventListener("scroll", function () {
-//     var header = document.querySelector('.header');
-//     if (window.pageYOffset > 200) { // Измените значение (200) на позицию, при которой вы хотите скрыть заголовок
-//         header.style.top = "-100px"; // Задайте отрицательное значение, чтобы скрыть заголовок
-//     } else if (200 > window.pageYOffset) {
-//         header.style.top = "-100px"; // Задайте отрицательное значение, чтобы скрыть заголовок
-//     } else {
-//         header.style.top = "0"; // Верните заголовок на место при скролле наверх
-//     }
-//     header.style.transition = "top 0.3s ease"; // Добавьте эту строку для установки плавного перехода
-// });
+let menu = document.getElementById('open');
+let close = document.getElementById("close");
 
-// $(document).ready(function () {
-//     var scrollTop = $(window).scrollTop();
-//     $(window).scroll(function () {
-//         if ($(window).scrollTop() > scrollTop && scrollTop > 100) {
-//             $("#header").addClass("sticky");
-//         } else {
-//             $("#header").removeClass("sticky");
-//         }
-//         scrollTop = $(window).scrollTop();
-//     });
+document.getElementById('burger').onclick = function burger() {
+    menu.classList.add('open');
+    close.classList.add('open');
+    document.body.classList.add('body');
+}
+
+document.getElementById('close').onclick = (function closes() {
+    menu.classList.remove('open');
+    close.classList.remove('open');
+    document.body.classList.remove('body');
+});
+
+document.addEventListener('keydown', function (event) {
+    const key = event.key; // const {key} = event; in ES6+
+    if (key === "Escape") {
+        menu.classList.remove('open');
+        close.classList.remove('open');
+        document.body.classList.remove('body');
+    }
+});
+
 
 // карусель для выбора сезона

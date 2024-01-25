@@ -15,17 +15,41 @@
         <div class="header-logo">
             <a href="../../index.html"><img src="../../images/logo-friends.png" alt="logo"></a>
         </div>
-        <ul class="header-menu">
-            <li class="first-paragraph"><a href="../season-select.html">Сезоны</a></li>
-            <li class="second-paragraph"><a href="../actors.html">Актёры</a></li>
-            <li class="third-paragraph"><a href="../characters.html">Персонажи</a></li>
-            <li class="fourth-paragraph"><a href="../news.html">Новости</a></li>
-            <li class="fifth-paragraph"><a href="../FAQ.html">FAQ</a></li>
+        <div class="burger" id="burger">
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                <g id="SVGRepo_iconCarrier">
+                    <path d="M5 8H13.75M5 12H19M10.25 16L19 16" stroke="#ffffff" stroke-linecap="round"
+                          stroke-linejoin="round"></path>
+                </g>
+            </svg>
+        </div>
+        <div class="close" id="close">
+            <svg xmlns="http://www.w3.org/2000/svg"
+                 width="40"
+                 height="40"
+                 viewBox="0 0 24 24"
+                 fill="white"
+                 stroke="currentColor"
+                 stroke-width="2"
+                 stroke-linecap="round"
+                 stroke-linejoin="round">
+                <line x1="18" y1="6" x2="6" y2="18"/>
+                <line x1="6" y1="6" x2="18" y2="18"/>
+            </svg>
+
+        </div>
+        <ul class="header-menu" id="open">
+            <li class="first-paragraph"><a href="../../index.html#select-season">Сезоны</a></li>
+            <li class="second-paragraph"><a href="#" class="disabled">Актёры</a></li>
+            <li class="third-paragraph"><a href="#" class="disabled">Персонажи</a></li>
+            <li class="fourth-paragraph"><a href="#" class="disabled">Новости</a></li>
+            <li class="fifth-paragraph"><a href="#" class="disabled">FAQ</a></li>
         </ul>
         <div class="header-search">
-            <a href="#">
-                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30" height="30" viewBox="0 0 50 50"
-                     style="fill:#FFFFFF;">
+            <a href="#" class="disabled">
+                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30" height="30" viewBox="0 0 50 50">
                     <path d="M 21 3 C 11.621094 3 4 10.621094 4 20 C 4 29.378906 11.621094 37 21 37 C 24.710938 37 28.140625 35.804688 30.9375 33.78125 L 44.09375 46.90625 L 46.90625 44.09375 L 33.90625 31.0625 C 36.460938 28.085938 38 24.222656 38 20 C 38 10.621094 30.378906 3 21 3 Z M 21 5 C 29.296875 5 36 11.703125 36 20 C 36 28.296875 29.296875 35 21 35 C 12.703125 35 6 28.296875 6 20 C 6 11.703125 12.703125 5 21 5 Z"></path>
                 </svg>
             </a>
@@ -35,7 +59,7 @@
 
 <div class="main-season-description">
     <div class="container">
-        <p>Первый сезон сериала "Друзья" вводит зрителей в мир Росса Геллера, Моники Геллер, Чендлера Бинга, Фиби Буффе,
+        <p class="prev">Первый сезон сериала "Друзья" вводит зрителей в мир Росса Геллера, Моники Геллер, Чендлера Бинга, Фиби Буффе,
             Джоуи Триббиани и Рейчел Грин. Их жизни переплетаются, когда Рейчел, бежавшая от свадьбы, приходит в
             квартиру
             Моники, и они снова становятся близкими друзьями.
@@ -49,20 +73,23 @@
             настоящей легендой телевизионного искусства. Этот сезон устанавливает тон для всего сериала, который
             продолжит радовать зрителей в течение десяти лет и станет классикой ситкомов.</p>
 
-<div class="video">
-    <a href="#" onclick="history.back();" class="arrow-left">
-<!--        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"><path d="M10 20A10 10 0 1 0 0 10a10 10 0 0 0 10 10zm1.289-15.7 1.422 1.4-4.3 4.344 4.289 4.245-1.4 1.422-5.714-5.648z"/></svg>-->
-        <span>Назад</span>
-    </a>
-        <div id="player"></div>
-    <a href="episode-2.html" class="arrow-right">
-<!--        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"><path d="M10 20A10 10 0 1 0 0 10a10 10 0 0 0 10 10zm1.289-15.7 1.422 1.4-4.3 4.344 4.289 4.245-1.4 1.422-5.714-5.648z"/></svg>-->
-    <span>Вперёд</span>
-    </a>
-</div>
-        <!--Оформить кнопку-->
-<!--        <a href="#" onclick="history.back();">Назад</a>-->
-<!--        <a href="#" onclick="history.next();">Вперёд</a>-->
+        <div class="video">
+            <a href="../../pages/season-1/episode-1.html" class="arrow-left">
+                <svg fill="#808080FF" height="65px" width="auto" version="1.1" id="Layer_1"
+                     xmlns="http://www.w3.org/2000/svg" viewBox="0 0 330.002 330.002" xml:space="preserve"><g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                    <g id="SVGRepo_iconCarrier"> <path id="XMLID_226_"
+                                                       d="M233.252,155.997L120.752,6.001c-4.972-6.628-14.372-7.97-21-3c-6.628,4.971-7.971,14.373-3,21 l105.75,140.997L96.752,306.001c-4.971,6.627-3.627,16.03,3,21c2.698,2.024,5.856,3.001,8.988,3.001 c4.561,0,9.065-2.072,12.012-6.001l112.5-150.004C237.252,168.664,237.252,161.33,233.252,155.997z"></path> </g></svg>
+            </a>
+            <div id="player"></div>
+            <a href="../../pages/season-1/episode-3.html" class="arrow-right">
+                <svg fill="#808080FF" height="65px" width="auto" version="1.1" id="Layer_1"
+                     xmlns="http://www.w3.org/2000/svg" viewBox="0 0 330.002 330.002" xml:space="preserve"><g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                    <g id="SVGRepo_iconCarrier"> <path id="XMLID_226_"
+                                                       d="M233.252,155.997L120.752,6.001c-4.972-6.628-14.372-7.97-21-3c-6.628,4.971-7.971,14.373-3,21 l105.75,140.997L96.752,306.001c-4.971,6.627-3.627,16.03,3,21c2.698,2.024,5.856,3.001,8.988,3.001 c4.561,0,9.065-2.072,12.012-6.001l112.5-150.004C237.252,168.664,237.252,161.33,233.252,155.997z"></path> </g></svg>
+            </a>
+        </div>
 
     </div>
 </div>
@@ -71,10 +98,16 @@
         <span>Здесь ничего нет</span>
     </div>
 </footer>
-<script src="/scripts/script.js"></script>
+
 <script>
     let player = new Playerjs({
-        id: "player", file: "../../video/playlist-friends.txt", plstart: "s1-ep1"});
+        id: "player", file: "../../video/playlist-friends.txt", plstart: "s1-ep1"
+    });
 </script>
 </body>
 </html>
+
+
+
+
+
