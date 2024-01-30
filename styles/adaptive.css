@@ -134,11 +134,18 @@
         }
     }
 
-    @media screen and (max-width: 430px) {
+    @media screen and (max-width: 600px) {
 
         .main-image {
-            height: 170px;
+            display: none;
         }
+
+        .select-season {
+            padding-top: 10px;
+        }
+    }
+
+    @media screen and (max-width: 430px) {
 
         .burger svg {
             height: 40px;
