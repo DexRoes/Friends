@@ -41,4 +41,8 @@ document.addEventListener('keydown', function (event) {
 });
 
 
-// карусель для выбора сезона
+$('.slider').slick({
+    infinite: false,
+    slidesToShow: 4,
+    slidesToScroll: 2
+});

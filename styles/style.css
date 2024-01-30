@@ -42,7 +42,7 @@ body {
     width: 240px;
 }
 
-.header-menu  {
+.header-menu {
     display: flex;
 }
 
@@ -286,7 +286,7 @@ body {
     transition: .4s;
 }
 
-.arrow-left svg:hover, .arrow-right svg:hover{
+.arrow-left svg:hover, .arrow-right svg:hover {
     fill: #cecece;
 }
 
@@ -312,9 +312,6 @@ footer span {
 /*При выборе серии фон или текст плавно меняется на тёмно-серый*/
 
 
-
-
-
 /*/////////////////////////////////////*/
 /*прилипший низ*/
 /*/////////////////////////////////////*/
@@ -327,6 +324,7 @@ body {
     min-height: 86vh; /* высота веб-страницы больше или равна высоте окна браузера */
     /*margin: 0;*/
 }
+
 .main-season-description {
     flex: 1; /* если содержимое body меньше высоты окна, то section будет растянут до нужной величины */
 }
@@ -351,4 +349,15 @@ body {
 
 #player {
     margin: 0;
+}
+
+.slider {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 40px 0;
+}
+
+.slider-item img {
+    max-width: 230px;
+    margin: 0 auto;
 }
